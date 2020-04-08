@@ -1,0 +1,35 @@
+{
+  "name": "uptaskjs",
+  "version": "1.0.0",
+  "description": "Proyecto con Node y MVC",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon ./index.js",
+    "start": "concurrently \"npm run dev \" \"npm run watch \" ",
+    "watch": "webpack --w --mode development"
+  },
+  "author": "David Ferman",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^5.1.0",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.4",
+    "express": "^4.17.1",
+    "express-session": "^1.17.0",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.1.0",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "pug": "^2.0.4",
+    "sequelize": "^5.21.4",
+    "sweetalert2": "^9.10.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "babel-loader": "^8.0.6",
+    "nodemon": "^2.0.2",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.11"
+  }
+}
